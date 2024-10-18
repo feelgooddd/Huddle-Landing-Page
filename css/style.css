@@ -22,7 +22,6 @@ body {
   background-size: cover;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  display: flex;
 }
 
 .container {
@@ -37,11 +36,11 @@ body {
   align-items: center;
   gap: 2rem;
   margin: 50px auto;
-  flex: 1;
   img {
     width: 100%;
     min-width: 460px;
   }
+  flex: 1;
 }
 
 .main-content {
@@ -78,6 +77,8 @@ body {
   justify-content: flex-end;
   gap: 2rem;
   padding: 0px 50px;
+  flex: 1;
+  width: 100%;
 }
 .socials li {
   border: 2px solid white;
@@ -103,8 +104,12 @@ body {
 
 @media only screen and (max-width: 800px) {
   header {
+    width: 100%;
+    min-width: 0;
+
     img {
-      width: 40%;
+      width: 50%;
+      min-width: 0;
     }
   }
   body {
@@ -112,25 +117,28 @@ body {
   }
   .main-area {
     flex-direction: column;
+    padding: 0px auto;
+    margin: 0px;
 
     img {
       max-width: 400px;
-      min-width: auto;
+      min-width: 0;
     }
   }
   .main-content {
     align-items: flex-end;
 
     text-align: center;
-    padding: 0px 30px;
+
     button {
       margin: 10px auto;
+      border: 1px solid green;
     }
   }
   .socials {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    padding: 0px 50px;
+    gap: 0rem;
+    padding: 10px 0px;
   }
 }
